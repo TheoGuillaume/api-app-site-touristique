@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const citeTouristiqueSchema = new mongoose.Schema({
     title: { type: String, required: true, maxlength:  100},
-    description: { type: String, maxlength: 300 },
+    description: { type: String },
     localisation : { type: String, maxlength: 50 },
     photo : { type : String, maxlength: 80 }
 });
