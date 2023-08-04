@@ -26,6 +26,7 @@ app.use((req, res, next) => {
 //console.log(db);
 
 // Routes
+app.use('/file', express.static('file'));
 app.use('/api', mainRoutes);
 
 app.listen(process.env.PORT, () => {
