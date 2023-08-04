@@ -4,7 +4,6 @@ const app = express();
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const mainRoutes = require('./mainRoute');
-const db = require('./database/connexion');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
